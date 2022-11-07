@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+.container-big{
+    max-width: 1200px;
+}
+#person-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col{
+    padding:  15px ;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: calc(100% / 4);
+}
+.container{
+    
+    padding: 2px 0;
+}
+img{
+width: 100%;
+}    
+    

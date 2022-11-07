@@ -43,12 +43,14 @@ for (let i = 0; i < team.length; i++) {
     console.log(person.name , person.position , person.profilePhoto)
     // creo l'elemento che verra' inserito nel dom
     const listItem = `
-        <li>
-            <h4>${person.name}</h4>
-            <p>Posizione: ${person.position}</p>
-            <p>img: ${person.profilePhoto}  </p>
-        </li>
-    `;
+        <div class="col">
+            <img src="img/${person.profilePhoto}" alt="profile-picture">
+            <div class="container">
+                <h4>${person.name}</h4>
+                <p>${person.position}</p>
+            </div>
+        </div>
+    `;  
     // inserisco l'elemento creato nel dom
     personList.innerHTML += listItem;
 }
