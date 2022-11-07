@@ -7,7 +7,7 @@ const team = [
         profilePhoto : "wayne-barnett-founder-ceo.jpg"
     },
     {
-        name : "Angela Caroll	",
+        name : "Angela Caroll",
         position : "Chief Editor",
         profilePhoto : "angela-caroll-chief-editor.jpg"
     },
@@ -34,3 +34,11 @@ const team = [
 ];
 
 // stampare in console per ogni membro del team le informazioni contenute nell'oggetto
+
+// creo un ciclo per l'array 
+for (let i = 0; i < team.length; i++) {
+    // console.log(team[i]);
+    const person = team[i]
+    console.log(person.name , person.position , person.profilePhoto)
+}
+    
