@@ -34,11 +34,22 @@ const team = [
 ];
 
 // stampare in console per ogni membro del team le informazioni contenute nell'oggetto
-
+const personList = document.getElementById("person-list")
 // creo un ciclo per l'array 
 for (let i = 0; i < team.length; i++) {
     // console.log(team[i]);
     const person = team[i]
+    // stampo in console i singoli dati 
     console.log(person.name , person.position , person.profilePhoto)
+    // creo l'elemento che verra' inserito nel dom
+    const listItem = `
+        <li>
+            <h4>${person.name}</h4>
+            <p>Posizione: ${person.position}</p>
+            <p>img: ${person.profilePhoto}  </p>
+        </li>
+    `;
+    // inserisco l'elemento creato nel dom
+    personList.innerHTML += listItem;
 }
     
