@@ -22,12 +22,12 @@
         <div id="app">
             
             <div class="container" >
-                <div class="row gy-3 gx-4 justify-content-between ">
-                    <div class="card col-3 p-3 bg-success bg-gradient" style="width: 18rem;">
-                        <img :src="member.team.profilePhoto" class="card-img-top" alt="">
+                <div class="row gy-3 gx-4 flex-wrap justify-content-evenly flex-wrap">
+                    <div class="card col-4 p-3 bg-success bg-gradient" style="width: 25rem;" v-for = "member in team">
+                        <img :src="member.profilePhoto" class="card-img-top" :alt="member.name">
                         <div class="card-body " >
                             <h5 class="card-title">{{member.name}}</h5>
-                            <p class="card-text"></p>
+                            <p class="card-text">{{member.position}}</p>
                             <a class="link-dark pe-1" href=""><i class="fa-brands fa-github"></i></a>
                             <a class="link-dark pe-1" href=""><i class="fa-brands fa-twitter"></i></a>
                             <a class="link-dark pe-1" href=""><i class="fa-brands fa-linkedin"></i></a>
